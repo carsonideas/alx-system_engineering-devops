@@ -1,2 +1,2 @@
-#!/bin/bash
-cut -f1 -d$'\t' | sort | uniq -c | tr -s ' ' | sort -t' ' -k1 -nr | head -11 | cut -d' ' -f3
+ echo '#!/bin/bash' > 103-the_biggest_fan
+ echo 'tail -n +2 | sort | cut -f1 | uniq -c | sort -g -r | head -11 | tr -s " " | cut -d" " -f3' >> 103-the_biggest_fan:wq
